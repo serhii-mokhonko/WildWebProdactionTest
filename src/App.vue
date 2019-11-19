@@ -4,22 +4,24 @@
       <app-header></app-header>
       <app-get-detox></app-get-detox>
       <app-right-way></app-right-way>
+      <app-success></app-success>
     </b-container>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import Header from "./components/Header.vue";
 import GetDetox from "./components/Getdetox.vue";
 import RightWay from "./components/Rightway.vue";
+import Success from "./components/Success.vue";
 
 export default {
   name: "app",
   components: {
     appHeader: Header,
     appGetDetox: GetDetox,
-    appRightWay: RightWay
+    appRightWay: RightWay,
+    appSuccess: Success
   }
 };
 </script>
