@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid>
+  <b-container fluid class='pb-5'>
     <b-nav class="d-flex justify-content-around align-items-center">
       <b-nav-item active>Products</b-nav-item>
       <b-nav-item>How to detox</b-nav-item>
@@ -13,7 +13,7 @@
       </b-nav-item>
     </b-nav>
 
-    <b-row class="header__row">
+    <b-row class="header__row m-0">
       <b-col class="d-flex flex-column justify-content-center header__col" cols="6">
         <h1>
           <span class="primary">Live fully</span>

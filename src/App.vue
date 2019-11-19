@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <b-container fluid>
+    <b-container fluid class='m-0 p-0'>
       <app-header></app-header>
+      <app-get-detox></app-get-detox>
+      <app-right-way></app-right-way>
     </b-container>
   </div>
 </template>
@@ -9,11 +11,15 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import Header from "./components/Header.vue";
+import GetDetox from "./components/Getdetox.vue";
+import RightWay from "./components/Rightway.vue";
 
 export default {
   name: "app",
   components: {
-    appHeader: Header
+    appHeader: Header,
+    appGetDetox: GetDetox,
+    appRightWay: RightWay
   }
 };
 </script>
@@ -24,15 +30,7 @@ export default {
 font-family: 'Play', sans-serif;
 font-family: 'Open Sans', sans-serif;
  */
-* {
-  margin: 0;
-  padding: 0;
-}
 #app {
   font-family: "Open Sans", sans-serif;
 }
-.container-fluid {
-  padding: 0;
-}
-
 </style>
