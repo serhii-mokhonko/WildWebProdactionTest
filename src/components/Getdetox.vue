@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid class="block-get-detox my-5 position-relative">
+  <b-container fluid class="block-detox my-5 position-relative">
     <b-row class="d-flex flex-column justify-content-center align-items-center w-100">
       <b-col class="block-title text-center my-4 px-5" cols="6">
         <h2>Get detox for your body and needs</h2>
@@ -8,7 +8,7 @@
         >Our special blend of functional herbs and minerals is unique to us and essential for you to get the added nutrients your body needs during a rapid detox.</p>
       </b-col>
     </b-row>
-    <b-row class="block-content d-flex justify-content-center align-items-center">
+    <b-row class="d-flex justify-content-center align-items-center">
       <b-col class="block-title text-center block-border px-5 pt-5 position-relative" cols="4">
         <h2 class="w-75 text-left mx-auto mx-5">Same-day detox, must-have nutrients</h2>
         <p
@@ -31,11 +31,11 @@ export default {};
 </script>
 
 <style scoped>
-.block-get-detox {
+.block-detox {
   background: #f1fbff;
 }
 
-.block-get-detox::before {
+.block-detox::before {
   content: "";
   width: 100%;
   height: 195px;
@@ -47,7 +47,7 @@ export default {};
   z-index: 10;
 }
 
-.block-get-detox::after {
+.block-detox::after {
   content: "";
   width: 100%;
   height: 195px;
