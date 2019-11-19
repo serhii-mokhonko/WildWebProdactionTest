@@ -7,6 +7,7 @@
       <app-success></app-success>
       <app-trusted></app-trusted>
       <app-finddetox></app-finddetox>
+      <app-faq></app-faq>
     </b-container>
   </div>
 </template>
@@ -18,6 +19,7 @@ import RightWay from "./components/Rightway.vue";
 import Success from "./components/Success.vue";
 import Trusted from "./components/Trusted.vue";
 import Finddetox from "./components/Finddetox.vue";
+import Faq from "./components/Faq.vue";
 
 export default {
   name: "app",
@@ -27,7 +29,8 @@ export default {
     appRightWay: RightWay,
     appSuccess: Success,
     appTrusted: Trusted,
-    appFinddetox: Finddetox
+    appFinddetox: Finddetox,
+    appFaq: Faq
   }
 };
 </script>
