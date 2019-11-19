@@ -5,6 +5,8 @@
       <app-get-detox></app-get-detox>
       <app-right-way></app-right-way>
       <app-success></app-success>
+      <app-trusted></app-trusted>
+      <app-finddetox></app-finddetox>
     </b-container>
   </div>
 </template>
@@ -14,6 +16,8 @@ import Header from "./components/Header.vue";
 import GetDetox from "./components/Getdetox.vue";
 import RightWay from "./components/Rightway.vue";
 import Success from "./components/Success.vue";
+import Trusted from "./components/Trusted.vue";
+import Finddetox from "./components/Finddetox.vue";
 
 export default {
   name: "app",
@@ -21,7 +25,9 @@ export default {
     appHeader: Header,
     appGetDetox: GetDetox,
     appRightWay: RightWay,
-    appSuccess: Success
+    appSuccess: Success,
+    appTrusted: Trusted,
+    appFinddetox: Finddetox
   }
 };
 </script>
