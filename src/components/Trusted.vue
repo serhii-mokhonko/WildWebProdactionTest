@@ -1,12 +1,12 @@
 <template>
-  <b-container fluid class="block-detox my-5 position-relative">
+  <b-container fluid class="my-5 position-relative">
     <b-row class="d-flex flex-column justify-content-center align-items-center w-100">
       <b-col class="block-title text-center my-4">
         <h2>Trusted detox for 30 years</h2>
       </b-col>
     </b-row>
 
-    <b-row class="d-flex justify-content-center flex-wrap align-self-stretch w-75 mx-auto">
+    <b-row class="d-flex justify-content-center align-self-stretch w-75 mx-auto">
       <b-col
         class="block-content text-center block-border block-border--rounded-top-left position-relative"
       >

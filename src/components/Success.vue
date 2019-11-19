@@ -1,12 +1,12 @@
 <template>
-  <b-container fluid class="block-detox my-5 position-relative">
+  <b-container fluid class="block-detox position-relative">
     <b-row class="d-flex flex-column justify-content-center align-items-center w-100 mb-5">
       <b-col class="block-title text-center my-4 px-5" cols="6">
         <h2>Proven success, well said</h2>
       </b-col>
     </b-row>
-    <b-row class="d-flex justify-content-around">
-      <b-col v-for="user in users.slice(0, 4)" :key="user.id" class="col-sm-6 col-lg-3">
+    <b-row class="d-flex justify-content-center">
+      <b-col v-for="user in users.slice(0, 4)" :key="user.id" class="col-lg-3">
         <div class="user__info d-flex align-items-start w-100">
           <img class="avatar mb-2" :src="getImgUrl(user.urlAvatar)" alt="face" />
           <div class="user__name ml-3">
@@ -109,22 +109,6 @@ export default {
             "Any one who says this product doesnt work doesnt read instructions i use it often and found my own method thats works 100% take 12 to 14 hours before test fill jug back up with water after using and pee as often as u can. Keep hydrating urself. Try to pee 4-5 times before test",
           raiting: 3,
           urlAvatar: "face-2.png"
-        },
-        {
-          id: 6,
-          name: "John Dou",
-          comment:
-            "Any one who says this product doesnt work doesnt read instructions i use it often and found my own method thats works 100% take 12 to 14 hours before test fill jug back up with water after using and pee as often as u can. Keep hydrating urself. Try to pee 4-5 times before test",
-          raiting: 2,
-          urlAvatar: "face-1.png"
-        },
-        {
-          id: 7,
-          name: "Lilu Dallas",
-          comment:
-            "Any one who says this product doesnt work doesnt read instructions i use it often and found my own method thats works 100% take 12 to 14 hours before test fill jug back up with water after using and pee as often as u can. Keep hydrating urself. Try to pee 4-5 times before test",
-          raiting: 1,
-          urlAvatar: "face-3.png"
         }
       ]
     };
@@ -143,6 +127,7 @@ export default {
 <style scoped>
 .block-detox {
   background: #f1fbff;
+  margin-top: 180px; 
 }
 
 .block-detox::before {

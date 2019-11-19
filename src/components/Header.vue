@@ -89,6 +89,11 @@ export default {};
   width: 100%;
 }
 
+.primary{
+color: #41b24f;
+}
+
+
 /* header bottom  */
 
 .header__bottom {

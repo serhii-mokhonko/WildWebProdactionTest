@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <b-container fluid class='m-0 p-0'>
+    <b-container fluid class="m-0 p-0">
       <app-header></app-header>
       <app-get-detox></app-get-detox>
       <app-right-way></app-right-way>
@@ -8,6 +8,7 @@
       <app-trusted></app-trusted>
       <app-finddetox></app-finddetox>
       <app-faq></app-faq>
+      <app-footer></app-footer>
     </b-container>
   </div>
 </template>
@@ -20,6 +21,7 @@ import Success from "./components/Success.vue";
 import Trusted from "./components/Trusted.vue";
 import Finddetox from "./components/Finddetox.vue";
 import Faq from "./components/Faq.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "app",
@@ -30,7 +32,8 @@ export default {
     appSuccess: Success,
     appTrusted: Trusted,
     appFinddetox: Finddetox,
-    appFaq: Faq
+    appFaq: Faq,
+    appFooter: Footer
   }
 };
 </script>
