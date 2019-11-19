@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid class="block-detox my-5 position-relative">
+  <b-container fluid class="my-5 position-relative">
     <b-row class="d-flex flex-column justify-content-center align-items-center w-100">
       <b-col class="block-title text-center px-5" cols="6">
         <h2>
