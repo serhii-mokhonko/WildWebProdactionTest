@@ -6,18 +6,18 @@
         <p>Our special blend of functional herbs and minerals is unique to us and essential for you to get the added nutrients your body needs during a rapid detox.</p>
       </b-col>
     </b-row>
-    <b-row class="d-flex justify-content-center align-self-stretch w-75 my-5 py-2 mx-auto">
-      <b-col class="block-content text-center block-border mr-4 position-relative">
-        <h2 class="text-left">Same-day detox, must-have nutrients</h2>
-        <p class="text-left"
+    <b-row class="d-flex flex-row w-75 justify-content-center my-5 mx-auto">
+      <b-col class="block-content text-center block-border block-border--rounded-top-left position-relative pt-5 align-self-md-stretch">
+        <h2 class="mx-auto w-75 mt-4 text-left">Same-day detox, must-have nutrients</h2>
+        <p class="mx-auto w-75 text-left"
         >Yes, your body gets rid of toxins on its own, but its process is complex and can take more than a day. Our unique mix of herbs and minerals kicks your body in gear to detox naturally and quickly…with extra benefits from essential minerals and vitamins. We get your body back to clean when you need it. Win. Win.</p>
         <b-button variant="success" class="btn-radius my-5">How to detox</b-button>
         <img src="../assets/leaf-large.png" class="position-absolute leaf-large" alt="leaf" />
         <img src="../assets/leaf-smal-2.png" class="position-absolute leaf-small" alt="leaf" />
       </b-col>
-      <b-col class="p-0">
-        <img src="../assets/lambert.png" class="w-100 h-auto mt-0" alt="image" />
-        <img src="../assets/grace.png" class="img__rounded w-100 h-auto mt-5" alt="image" />
+      <b-col class="block-content p-0 ml-4 align-self-md-stretch">
+        <img src="../assets/lambert.png" class="mt-0 w-100" alt="image" />
+        <img src="../assets/grace.png" class="img__rounded mt-5 w-100" alt="image" />
       </b-col>
     </b-row>
   </b-container>
@@ -56,6 +56,10 @@ export default {};
   z-index: 30;
 }
 
+.block-content {
+  max-width: 520px;
+}
+
 .block-title h2,
 .block-content h2 {
   font-family: "Play", sans-serif;
@@ -69,12 +73,11 @@ export default {};
   font-size: 14px;
 }
 
-.block-content {
-  padding: 70px 70px;
-}
-
 .block-border {
   border: 3px solid #41b24f;
+}
+
+.block-border--rounded-top-left {
   border-top-left-radius: 100px;
 }
 
