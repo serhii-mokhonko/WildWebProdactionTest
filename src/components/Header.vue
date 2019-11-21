@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid class='pb-5'>
+  <b-container fluid class="pb-5">
     <b-nav class="d-flex justify-content-around align-items-center">
       <b-nav-item active>Products</b-nav-item>
       <b-nav-item>How to detox</b-nav-item>
@@ -32,7 +32,7 @@
           “Get clean when you
           need to be clean”
         </h2>
-        <b-button variant="success">Help me find my detox</b-button>
+        <b-button variant="success" v-b-modal.modal-center>Help me find my detox</b-button>
       </b-col>
       <b-col class="header__bottom__col header__bottom__col--right" cols="6">
         <h3>Cleanse smart, the same day</h3>
@@ -41,9 +41,22 @@
           Now, let’s find exactly what you need.
         </p>
       </b-col>
-      <img src="../assets/leaf-large.png" class="header__bottom__leaf-large" alt="leaf" />
-      <img src="../assets/leaf-small.png" class="header__bottom__leaf-small" alt="leaf" />
+      <img
+        src="../assets/leaf-large.png"
+        class="header__bottom__leaf-large paralax-element"
+        alt="leaf"
+        data-speed="10"
+      />
+      <img
+        src="../assets/leaf-small.png"
+        class="header__bottom__leaf-small paralax-element"
+        alt="leaf"
+        data-speed="5"
+      />
     </b-row>
+    <b-modal id="modal-center"  centered title="Get clean when you need to be clean">
+      <p class="my-4">Here some content about this page!</p>
+    </b-modal>
   </b-container>
 </template>
 
@@ -89,10 +102,9 @@ export default {};
   width: 100%;
 }
 
-.primary{
-color: #41b24f;
+.primary {
+  color: #41b24f;
 }
-
 
 /* header bottom  */
 
@@ -137,13 +149,13 @@ color: #41b24f;
 
 .header__bottom__leaf-large {
   position: absolute;
-  top: 0;
+  top: -50px;
   right: 0;
 }
 
 .header__bottom__leaf-small {
   position: absolute;
-  bottom: 0;
+  bottom: 150px;
   left: 0;
 }
 

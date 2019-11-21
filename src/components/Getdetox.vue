@@ -53,7 +53,7 @@ export default {};
   bottom: 0px;
   left: 0;
   transform: translateY(100%);
-  z-index: 10;
+  z-index: 30;
 }
 
 .block-title h2,

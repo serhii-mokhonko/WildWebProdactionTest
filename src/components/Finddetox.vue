@@ -8,9 +8,9 @@
         >Our special blend of functional herbs and minerals is unique to us and essential for you to get the added nutrients your body needs during a rapid detox.</p>
       </b-col>
     </b-row>
-    <img src="../assets/leaf-large.png" class="leaf__left position-absolute" alt="leaf" />
-    <img src="../assets/leaf-smal-2.png" class="leaf__right position-absolute" alt="leaf" />
-    <img src="../assets/leaf-mini.png" class="leaf__bottom position-absolute" alt="leaf" />
+    <img src="../assets/leaf-large.png" class="leaf__left position-absolute paralax-element" alt="leaf" data-speed="7"/>
+    <img src="../assets/leaf-smal-2.png" class="leaf__right position-absolute paralax-element" alt="leaf" data-speed="4"/>
+    <img src="../assets/leaf-mini.png" class="leaf__bottom position-absolute paralax-element" alt="leaf" data-speed="12"/>
   </b-container>
 </template>
 

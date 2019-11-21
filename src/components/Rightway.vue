@@ -21,9 +21,9 @@
         <p>{{item.content}}</p>
       </b-col>
     </b-row>
-    <img src="../assets/leaf-large.png" class="leaf__right position-absolute" alt="leaf" />
-    <img src="../assets/leaf-smal-2.png" class="leaf__left position-absolute" alt="leaf" />
-    <img src="../assets/leaf-mini.png" class="leaf__bottom position-absolute" alt="leaf" />
+    <img src="../assets/leaf-large.png" class="leaf__right position-absolute paralax-element" alt="leaf"  data-speed="7"/>
+    <img src="../assets/leaf-smal-2.png" class="leaf__left position-absolute paralax-element" alt="leaf"  data-speed="5"/>
+    <img src="../assets/leaf-mini.png" class="leaf__bottom position-absolute paralax-element" alt="leaf"  data-speed="7"/>
   </b-container>
 </template>
 
@@ -101,19 +101,19 @@ export default {
 }
 
 .leaf__right {
-  top: 25%;
+  top: 100px;
   right: 10%;
   transform: rotateX(-180deg);
 }
 
 .leaf__left {
-  top: 35%;
+  top: 200px;
   left: 10%;
   transform: rotate(205deg);
 }
 
 .leaf__bottom {
-  bottom: 0;
+  bottom: 50px;
   right: 35%;
 }
 </style>
