@@ -34,11 +34,13 @@
           {{user.comment.slice(0, 250)}}
           <a
             href="#"
-            class="txt-success"
+            class="link"
             v-if="user.comment.length > 250"
           >...Read more</a>
         </p>
-        <a href="#" class="txt-success txt-success--line">More about QCarbo 16</a>
+        <div class="link link-to-right">
+          <a href="#">More about QCarbo 16</a>
+        </div>
       </b-col>
       <b-col class="block-detox__nav d-flex align-self-center" cols="1">
         <a href="#">
@@ -127,7 +129,7 @@ export default {
 <style scoped>
 .block-detox {
   background: #f1fbff;
-  margin-top: 180px; 
+  margin-top: 180px;
 }
 
 .block-detox::before {
@@ -189,25 +191,79 @@ export default {
   opacity: 0.2;
 }
 
-a.txt-success {
-  color: #41b24f;
+/* LINK  */
+
+.link {
   text-decoration: none;
-  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #41b24f;
+  padding-right: 42px;
 }
 
-a.txt-success:hover {
+.link a {
+  color: #41b24f;
+  text-decoration: none;
+  transition: 0.7s ease-out 0.1s;
+}
+
+.link a:hover {
   color: #218838;
 }
 
-.txt-success--line::after {
-  content: "";
-  position: absolute;
-  right: -40px;
-  top: 50%;
-  height: 2px;
-  width: 22px;
-  border-bottom: 2px solid #41b24f;
+/* link to right */
+.link-to-right {
+  display: inline-block;
+  position: relative;
+  transition: 0.7s ease-out 0.1s;
 }
+
+.link-to-right:hover {
+  padding-left: 42px;
+  padding-right: 0;
+}
+
+/* before */
+.link a::before {
+  display: inline-block;
+  content: "";
+  width: 0px;
+  height: 2px;
+  background-color: #41b24f;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: 0.7s ease-out 0.1s;
+}
+
+.link a:hover::before {
+  content: "";
+  width: 22px;
+  background-color: #218838;
+}
+
+/* after */
+.link a::after {
+  display: inline-block;
+  content: "";
+  width: 22px;
+  height: 2px;
+  background-color: #41b24f;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transition: 0.7s ease-out 0.1s;
+}
+
+.link a:hover::after {
+  content: "";
+  width: 0px;
+  background-color: #218838;
+}
+
+/* LINK END */
 
 .block-detox__nav {
   position: absolute;
