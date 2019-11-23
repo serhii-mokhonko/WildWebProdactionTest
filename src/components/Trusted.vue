@@ -22,7 +22,9 @@
         <p
           class="w-75 text-left"
         >If you’re not satisfied with your product for any reason, we’ll send you a refund.</p>
-        <a href="#" class="txt-success txt-success--line block text-left">Learn more</a>
+        <div class="link link-to-right">
+          <a href="#">Learn more</a>
+        </div>
       </b-col>
     </b-row>
 

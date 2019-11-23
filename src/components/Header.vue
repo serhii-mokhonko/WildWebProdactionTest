@@ -32,7 +32,7 @@
           “Get clean when you
           need to be clean”
         </h2>
-        <b-button variant="success" v-b-modal.modal-center>Help me find my detox</b-button>
+        <b-button variant="success">Help me find my detox</b-button>
       </b-col>
       <b-col class="header__bottom__col header__bottom__col--right" cols="6">
         <h3>Cleanse smart, the same day</h3>
@@ -54,9 +54,6 @@
         data-speed="5"
       />
     </b-row>
-    <b-modal id="modal-center"  centered title="Get clean when you need to be clean">
-      <p class="my-4">Here some content about this page!</p>
-    </b-modal>
   </b-container>
 </template>
 
